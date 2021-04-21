@@ -1,11 +1,11 @@
 import React from 'react';
-import {StyleSheet, View,Text} from 'react-native';
+import {StyleSheet, View,Text,TouchableHighlight} from 'react-native';
 
 const InputButton = (props) => {
    return(
-       <View style ={styles.inputButton}>
+       <TouchableHighlight style ={styles.inputButton} underlayColor="#193441" onPress={props.onPress}>
         <Text style={styles.inputButtonText}>{props.value}</Text>
-       </View>);
+       </TouchableHighlight>);
 }
 
 const styles = StyleSheet.create({
